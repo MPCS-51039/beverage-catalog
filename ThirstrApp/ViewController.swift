@@ -10,9 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var beverageDeliciousnessLabel: UILabel!
+    @IBOutlet weak var beverageSeasonLabel: UILabel!
+
+    @IBOutlet weak var beverageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.beverageLabel.text = "Lemonade"
+        self.beverageSeasonLabel.text = "Summer"
+        self.beverageDeliciousnessLabel.text = "Absolutely!"
     }
 
 

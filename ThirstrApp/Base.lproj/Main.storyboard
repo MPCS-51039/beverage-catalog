@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,131 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ThirstrApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09Z-Pl-RVO">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="fZ5-IM-woD">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="581"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lemonade" translatesAutoresizingMaskIntoConstraints="NO" id="QWM-CA-Y4j" userLabel="beverageImageView">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="412.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="QWM-CA-Y4j" secondAttribute="height" multiplier="240:239" id="Ziw-hY-Ly2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flG-Ka-kTc" userLabel="beverageLabel">
+                                                <rect key="frame" x="168" y="433.5" width="78" height="38.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="96"/>
+                                                </variation>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="P2X-Uz-9uM">
+                                                <rect key="frame" x="117" y="493" width="180" height="33.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSF-Dj-05T">
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.5" height="33.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="48"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jib-xz-ZMb" userLabel="beverageSeasonLabel">
+                                                        <rect key="frame" x="115.5" y="0.0" width="64.5" height="33.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="48"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="avJ-Qh-ug9">
+                                                <rect key="frame" x="106" y="547.5" width="202" height="33.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delicious?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0TI-Bg-e8D">
+                                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="33.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="48"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvy-1r-ocC" userLabel="beverageDeliciousnessLabel">
+                                                        <rect key="frame" x="137.5" y="0.0" width="64.5" height="33.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="48"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="fZ5-IM-woD" firstAttribute="trailing" secondItem="F9Y-bv-jEm" secondAttribute="trailing" id="4hW-uP-0iS"/>
+                                    <constraint firstItem="fZ5-IM-woD" firstAttribute="width" secondItem="6Al-TD-tQn" secondAttribute="width" id="awR-cv-eCi"/>
+                                    <constraint firstItem="fZ5-IM-woD" firstAttribute="bottom" secondItem="F9Y-bv-jEm" secondAttribute="bottom" id="kSa-uZ-y4T"/>
+                                    <constraint firstItem="fZ5-IM-woD" firstAttribute="leading" secondItem="F9Y-bv-jEm" secondAttribute="leading" id="td6-V7-ZSJ"/>
+                                    <constraint firstItem="fZ5-IM-woD" firstAttribute="top" secondItem="F9Y-bv-jEm" secondAttribute="top" id="vd4-UL-jFx"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="F9Y-bv-jEm"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="6Al-TD-tQn"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="09Z-Pl-RVO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4cg-f2-B0B"/>
+                            <constraint firstItem="QWM-CA-Y4j" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Tua-3Y-TR5"/>
+                            <constraint firstItem="09Z-Pl-RVO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cP9-Wf-ddh"/>
+                            <constraint firstItem="QWM-CA-Y4j" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="i7Z-Fx-e74"/>
+                            <constraint firstItem="09Z-Pl-RVO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="uJy-q7-S6V"/>
+                            <constraint firstItem="09Z-Pl-RVO" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="xga-tn-DE8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Tua-3Y-TR5"/>
+                                <exclude reference="i7Z-Fx-e74"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="i7Z-Fx-e74"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="Tua-3Y-TR5"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="beverageDeliciousnessLabel" destination="uvy-1r-ocC" id="mgY-8X-SpR"/>
+                        <outlet property="beverageLabel" destination="flG-Ka-kTc" id="WgR-gt-2Wr"/>
+                        <outlet property="beverageSeasonLabel" destination="Jib-xz-ZMb" id="ne4-OJ-pjT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lemonade" width="600" height="900"/>
+    </resources>
 </document>
